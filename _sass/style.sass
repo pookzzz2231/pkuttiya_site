@@ -12,8 +12,22 @@ $blue: #5bc0de
 @import "partial/show_case"
 @import "partial/project_show"
 
+//fade
+.fade-in
+  opacity: 1
+  transition: 2.5s opacity
+
+.fade-out
+  opacity: 0
+  transition: none
+//
+
 .no-padding
   padding: 0
+
+.alert-grey
+  background-color: $grey
+  color: white
 
 body
   font-family: "Mate", sans-serif

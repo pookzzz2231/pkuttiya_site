@@ -2,9 +2,14 @@
 %html
   {% haml head.haml %}
   %body
-    %header
-      {% haml landing_page/header.haml %}
-    .container
-      {{ content }}
-    %footer
-      {% haml footer.haml %}
+    .fade-in
+      %script(src="/assets/js/add_fade.js")
+      %header
+        {% haml landing_page/header.haml %}
+      .container
+        {{ content }}
+      %footer
+        {% haml footer.haml %}
+    %script(src="/assets/js/remove_fade.js")
+      
+

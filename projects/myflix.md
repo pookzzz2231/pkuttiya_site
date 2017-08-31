@@ -62,17 +62,7 @@ end
 The application requires test for both frontend and backend. Below is the illustration of tests integration and the purposes of the implementation.
 
 {: .table .table-responsive .table-bordered}  
-| Integration        | Purpose                 |
-|--------------------|-------------------------|
-| Rspec-rails        | controller test         |
-| shoulda-matchers   | rails library test      |
-| capybara           | integration-test        |
-| capybara-email     | integration mailer test |
-| vcr                | record/capture api      |
-| database_cleaner   | reset test database     |
-| selenium-webdriver | automated tests         |
-| fabricator         | Ruby object generator   |
-| faker              | Fake data for fabricator|
+{% include project/test.md %}
 
 > Alternatively, fabricator and faker could be use for application seed as well.
 
