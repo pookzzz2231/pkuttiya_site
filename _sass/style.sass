@@ -1,0 +1,46 @@
+$grey: #b3b3b3
+$text: #4a4a4a
+$border: #e7e7e7
+$red: #b00b00
+$blue: #5bc0de
+
+@import "font"
+@import "highlight"
+@import "partial/landing_page"
+@import "partial/header"
+@import "partial/tag"
+@import "partial/show_case"
+@import "partial/project_show"
+
+.no-padding
+  padding: 0
+
+body
+  font-family: "Mate", sans-serif
+  color: $text
+
+  p
+    font-size: 16px
+    line-height: 1.3em
+
+.icons i
+  font-size: 4em
+
+ul
+  padding: 0
+
+.wrapper
+  width: 70%
+  margin: 0 auto
+
+#new_project, .edit_project 
+  padding: 2em 6em
+
+@media screen and (max-width: 735px)
+  body
+    p
+      padding: 0 1em !important
+
+@media screen and (max-width: 415px)
+  .container
+    width: 95%

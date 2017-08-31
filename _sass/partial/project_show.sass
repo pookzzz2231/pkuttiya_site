@@ -1,0 +1,127 @@
+//show page
+.project-show
+  width: 80%
+  margin: 0 auto
+  .project-header
+    .text-center, .cover
+      margin-bottom: 2em
+    .cover
+      width: 100%
+      margin-left: auto
+      margin-right: auto
+      padding: 0 1.5em
+      img
+        width: 100%
+    a
+      width: 80%
+      float: right
+      text-decoration: none
+      .logo
+        width: 100%
+        margin-bottom: 5px
+      .link
+        p
+          color: $red
+          display: inline-block
+
+      //svg  
+      svg
+        display: inline-block
+        height: 24
+        width: 24
+        viewbox: "0 0 24 24"
+
+      path, path.arrow
+        fill: $red
+
+      &:hover
+
+        svg
+
+          path.arrow
+            transform: translate(2px, -2px)
+            transition: transform 0.5s ease-in-out
+
+  .description
+    border-bottom: 1px solid $border
+
+  .content
+    padding: 2em 0
+    margin-bottom: 2em
+    border-bottom: 1px solid $border
+    h4
+      margin-bottom: 1em
+    p, figure, blockquote, table
+      margin-bottom: 1.5em
+    p
+      text-align: justify
+      img
+        width: 100%
+    blockquote
+      border-color: $grey
+      p
+        margin-bottom: 0
+
+  
+
+  ul.checked
+    margin: 0 0 0 1em
+    padding: 0 0 1em .2em 
+    list-style: none
+    text-indent: -2px
+
+    li
+      padding: 2px 0
+      &:before
+        content: '✔'
+        color: $blue
+        margin-left: -1em
+        margin-right: 5px
+
+  .split
+    display: inline-block
+    width: 46.5%
+    vertical-align: top
+
+  p.lead.text-center
+    padding: 1em
+
+  section.footer
+    margin-bottom: 2em
+    .showcase
+      border: none
+      .showcase-img
+        padding-top: 1em
+        .square
+          width: 32%
+          .img
+            height: 160px
+
+@media screen and (max-width: 770px)
+  .project-show
+    width: 100%
+    .project-header
+      a
+        float: none
+        display: inline-block
+        width: 100%
+      img.logo
+        width: 50% 
+    .wrapper
+      width: 80%
+
+    .project-header, section.content
+      p
+        padding: 0 !important
+
+    section.footer.container
+      width: 100% 
+
+@media screen and (max-width: 415px)
+  .project-show
+    .wrapper
+      width: 100%
+      .split
+        width: 100%
+        &:first-of-type
+          padding-bottom: 0

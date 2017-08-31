@@ -1,0 +1,52 @@
+ul.tags
+  padding: 15px
+  list-style: none
+
+  li.tag
+    display: inline-block
+    position: relative
+    margin: 0 1em 1em 0
+    height: 30px
+    box-shadow: 1px 1px 3px 0 rgba(0,0,0,0.1), inset 1px -2px 1px -1px #eee
+    background-image: linear-gradient(#fff, #F0F0F0)
+    border-top-right-radius: 3px
+    border-bottom-right-radius: 3px
+    border: 1px solid #D4D4D4
+    border-left: none
+
+    &:before
+      position: absolute
+      top: 50%
+      left: -8.5px
+      z-index: 0
+      width: 17px
+      height: 18px
+      margin-top: -9px
+      border-right: solid 1px #adadad
+      border-bottom: solid 1px #d4d4d4
+      background-image: linear-gradient(45deg, #fff, #F0F0F0)
+      transform: rotate(134deg) skewX(-10deg) skewY(-10deg)
+      
+    &:before, &:after
+      content: ''
+      display: inline-block
+
+    &:after
+      position: absolute
+      top: 50%
+      left: 3px
+      margin-top: -3px
+      width: 6px
+      height: 6px
+      background: #FFF
+      border: 1px solid #CCC
+      border-radius: 50%
+      z-index: 1    
+
+    span
+      position: relative
+      left: 2px
+      color: #666
+      cursor: default
+      padding: 0 .9375rem
+      font-size: .75rem

@@ -1,0 +1,6 @@
+.col-md-8.col-md-offset-2
+  .text-center
+    %h1 {{ page.title | upcase }}
+    %p.small {{ page.excerpt }}
+  .cover
+    %img.img-fluid{src: "/assets/img/{{ page.title | downcase }}/cover.png"}

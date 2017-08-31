@@ -1,0 +1,10 @@
+%section.description.wrapper.clearfix
+  .col-md-8.no-padding
+    %p {{ page.description }}
+    {% haml project/tags.haml %}
+  .col-md-4.col-sm-12.no-padding.clearfix
+    %a.text-center{href: "{{page.link}}", target: "_blank"}
+      %img.logo{src: "/assets/img/{{page.title | downcase}}/logo.png"}
+      .link
+        %p view live version
+        {% haml svg_arrow.haml %}

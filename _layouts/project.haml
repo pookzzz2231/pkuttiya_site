@@ -1,0 +1,17 @@
+!!! 5
+%html
+  {% haml head.haml %}
+  %body
+    %header
+      {% haml header.haml %}
+    .container
+      .row.project-show
+        %section.project-header
+          {% haml project/header.haml %}
+          {% haml project/description.haml %}
+        %section.content.wrapper
+          {{ content }}
+        %section.footer.text-center
+          {% haml project/footer.haml %}
+    %footer
+      {% include footer.haml %}

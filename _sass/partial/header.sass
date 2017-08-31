@@ -1,0 +1,75 @@
+//header
+nav
+  .nav
+    ul
+      list-style: none
+      li
+        a
+          color: $text
+  #page
+    padding: 1em
+    width: 100%
+    position: relative
+    margin-bottom: 2em
+    border-bottom: 1px solid $border
+    #logo
+      padding: 1em
+      position: absolute
+      top: 0
+      left: 0
+      h3
+        margin: 0
+        a
+          color: $text
+    .nav-right
+      float: right
+      width: 50%
+      ul
+        text-align: right
+        li
+          display: inline-block
+          vertical-align: middle
+          padding-left: 1em
+          a i.fa
+            display: none
+
+  #landing
+    padding: 1em 1.5em
+    margin: 0 auto
+    width: 70%
+    
+    ul
+      li
+        width: 100%
+      #logo, #side-nav
+        vertical-align: middle
+        display: inline-block
+      #logo
+        width: 68%
+        li
+          text-align: left
+
+      #side-nav
+        width: 30%
+        li
+          text-align: right
+          padding: 2px 0
+        a
+          font-weight: normal
+
+@media screen and (max-width: 415px)
+  nav
+    a
+      padding: 5px !important
+    a:last-of-type
+      margin-right: 2px !important
+  
+  #landing, #page
+    h2, h3
+      font-size: 1.5em
+
+  #page
+    i.fa
+      display: inline-block !important
+    span
+      display: none

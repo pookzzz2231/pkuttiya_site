@@ -1,0 +1,10 @@
+!!! 5
+%html
+  {% haml head.haml %}
+  %body
+    %header
+      {% haml header.haml %}
+    .container
+      {{ content }}
+    %footer
+      {% include footer.haml %}
