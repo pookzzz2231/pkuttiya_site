@@ -6,7 +6,6 @@ description: "Internet web base application, focusing on photo sharing and user 
 tags: ["Frontend", "Backend", "Ruby on Rails", "UX/UI design"]
 link: "https://test.com"
 others: "myflix"
-permalink: /projects/photogram/
 ---
 
 #### Introduction
