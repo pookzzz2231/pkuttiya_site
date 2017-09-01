@@ -11,7 +11,7 @@ others: "myflix"
 #### Introduction
 My employee has a chance to demonstrate a Ruby on Rails's potentials as per our client's request regarding a prototype sample application emphasizing on social network photo sharing, hence Photogram was designed.  
 
-Although the application still has a lot of room to contribute, it has most of the modern social network requirements, and could also demonstrate the efficiency of Ruby on Rails.
+Although the application can be continuingly developed and contributed, it shows the majority interactions of modern user social network functionality. Ultimately, it could also demonstrate the efficiency of Ruby on Rails.
 
 #### Research and ideas
 Most of modern social network applications share some of the common components, such as followings, likes, upload photos and comments. The building process for photogram would break into backend part which interact between users request and server response, and front-end part, which mostly interacts with Jquery and Ajax. For further implementation, React or other front-end framework could come into use, if preferred.
@@ -24,13 +24,14 @@ As stated above, photogram was decided to be built with Rails TDD principle for 
 > [Find out more on how I normally work with TDD workflow.]({{"/projects/myflix#tdd_workflow"}})
 
 Additionally, the app also focusing on mobile and resposive design.
-
+f
 !mobile photo 
 
 #### Features for non-registered users
 Visitors will be forced to land on login/register page.
 
-> Registration authentication is implemented without Devise.
+> Registration authentication is implemented without Devise, 
+some manual logic includes required unique username and specific fields upon signup.
 
 !register page photo
 
@@ -56,7 +57,7 @@ After user registration; with unique username, user will be redirected to the us
 
 User can update avatar and include information such as name, website, bio and email address.
 
-> All uploaded photos are stored remotely with Amazon S3 services.
+> All uploaded photos are stored remotely with Amazon S3 services, using `Carrierwave`.
 
 !profile edit photo
 
@@ -101,9 +102,13 @@ Also, will notified user when user's `following user` posted a new post.
 
 Additionally, displaying new notifications count when user login back to account. Notification will resets to zero after user visits notification button, then restart the count for new notification if received as stated per event above.
 
-> Notification also handles some edge cases. For example, if `user_1` comments or mentions on `user_2` at the same post multiple times, will only considered comment/mention notification to count as one. 
+> Notifications logic also handles some edge cases. For example, if `user_1` comments or mentions on `user_2` at the same post multiple times, will only considered comment/mention notification to count as one. 
 
 !notification photo
 
+Displaying user's `following users` feed at root path; `/`.
+
+> User's feed can be implemented further to display posts from specified users, such as, from a user that has the most followings or user that shares similar hashtags/mentions.
+
 {: .alert .alert-grey}
-For a better user's experience; comment, like, and follow functionality are implemented with Rails Unobtrusive JavaScript. Along with updating its value without reloading page via Rails's Ajax process.
+For a better user's experience; comment, like, and follow functionality are implemented with Rails Unobtrusive JavaScript, which includes updating its value without reloading page via Rails's Ajax process.
