@@ -11,7 +11,7 @@ others: "myflix"
 Often times, there is a requirement for an application to be lightweight, event-driven, fast and simple to use. Order is the app that create as an experiment, of which is serve as an one page application, which has purposes of viewing, selecting and ordering items.
 
 #### Planning and research  
-As mentioned in introduction, Node.js integrated with frontend framework is the best candidate for creating Order app.  
+As mentioned in introduction, Node.js(Javascript runtime environment) integrated with Node Library/APIs and frontend framework are the best candidate for creating Order app.
 
 ###### Node.js is good because:
 
@@ -23,3 +23,26 @@ As mentioned in introduction, Node.js integrated with frontend framework is the 
 > Noted that `Backbone.js` was one of the first front-end framework that came out, and `React.js` wasn't around at the time. Modern front-end developer would prefer `Angular.js` or `React.js`, however, the concept of single page application, and the process of its implementation are still pretty much the same idea.  
 
 ###### Tools
+    "body-parser": "~1.15.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "express": "~4.14.0",
+    "jade": "~1.11.0",
+    "jasmine-node": "^1.14.5",
+    "morgan": "~1.7.0",
+    "nib": "^1.1.2",
+    "request": "^2.79.0",
+    "serve-favicon": "~2.3.0",
+    "stylus": "^0.54.5"
+    
+
+    dev
+    "grunt": "^1.0.1",
+    "grunt-bower-concat": "^1.0.0",
+    "grunt-contrib-handlebars": "^1.0.0",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "jasmine": "^2.5.2",
+    "nodemon": "^1.11.0"
+
+#### UX/UI
