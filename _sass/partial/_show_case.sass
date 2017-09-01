@@ -27,8 +27,6 @@ section.showcase
 
       .cover-logo
         position: absolute
-        padding: 0
-        margin: 0
         top: 50%
         transform: translateY(-50%)
         filter: brightness(0) invert(1)
@@ -36,17 +34,20 @@ section.showcase
     .wide, .square
       img
         width: 100px
-        height: 35px
+        height: auto
 
     .wide 
       width: 60%
       .cover-logo
         margin-left: 10%
 
-    .square 
+    .square
       width: 33%
       .cover-logo
         width: 100%
+        //temp fix
+        #photogram
+          height: 35px
 
     .overlay
       display: block
@@ -69,9 +70,11 @@ section.showcase
         transform: translate(-50%, -50%)
         -ms-transform: translate(-50%, -50%)
 
-        .image-title 
-          font-size: 1.5em
-          
+        .image-title
+          font-size: 1.15em
+        p
+          font-size: .75em
+
 @media screen and (max-width: 770px)
   .showcase
     padding: 1em !important
