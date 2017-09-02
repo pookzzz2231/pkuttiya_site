@@ -13,36 +13,48 @@ Often times, there is a requirement for an application to be lightweight, event-
 #### Planning and research  
 As mentioned in introduction, Node.js(Javascript runtime environment) integrated with Node Library/APIs and frontend framework are the best candidate for creating Order app.
 
-###### Node.js is good because:
+###### Node.js is good for:
 
 {: .checked}  
-- handle asynchronous I/O, take less ram
+- handle asynchronous I/O, take less RAM
 - Javascript on Back-end and Front-end 
 - Fast performance, high scalability
 
-> Noted that `Backbone.js` was one of the first front-end framework that came out, and `React.js` wasn't around at the time. Modern front-end developer would prefer `Angular.js` or `React.js`, however, the concept of single page application, and the process of its implementation are still pretty much the same idea.  
+> Noted that `Backbone.js` was one of the first front-end framework that came out, and `React.js` wasn't around at the time. Modern front-end developer might prefer `Angular.js` or `React.js`, however, the concept of single page application, and the process of its implementation are still pretty much the same idea.  
+
+> Backbone.js is packaged with the concept of models, collections, views and routers out of the box.
 
 ###### Tools
-    "body-parser": "~1.15.2",
-    "cookie-parser": "~1.4.3",
-    "debug": "~2.2.0",
-    "express": "~4.14.0",
-    "jade": "~1.11.0",
-    "jasmine-node": "^1.14.5",
-    "morgan": "~1.7.0",
-    "nib": "^1.1.2",
-    "request": "^2.79.0",
-    "serve-favicon": "~2.3.0",
-    "stylus": "^0.54.5"
-    
 
-    dev
-    "grunt": "^1.0.1",
-    "grunt-bower-concat": "^1.0.0",
-    "grunt-contrib-handlebars": "^1.0.0",
-    "grunt-contrib-uglify": "^2.0.0",
-    "grunt-contrib-watch": "^1.0.0",
-    "jasmine": "^2.5.2",
-    "nodemon": "^1.11.0"
+{: .table .table-responsive .table-bordered}
+| middleware    | purpose                          |
+|---------------|----------------------------------|
+| body-parser   | make req.body request available  |
+| cookie-parser | parse req.cookies for header     |
+| express       | web framework for node.js        |
+| pug           | back-end template engine         |
+| jasmine-node  | test Integration spec Javascript |
+| morgan        | HTTP request logger middleware   |
+| request       | http call middleware             |
+| grunt         | JavaScript Task Runner           |
+| bower         | Web package manager              |
+| handlebars    | front-end templating languages   |
+| uglify        | Javascript minifier              |
+| nodemon       | Server change monitor            |
 
 #### UX/UI
+Simplify interface with the ability to add item to cart without refreshing the page(re-rendering the whole page based on event trigger fire from Backbone.js).
+
+!add to cart photo
+
+Checkout and cart details summary.
+
+> Backbone.js is implemented with `Backbone router` which triggers the window to navigate at destinated url without reloading page.
+
+!cart view url highlight photo
+
+Attached other events to the view, such as empty cart, edit amount, or item details slideshow.
+
+!empty cart photo  
+!slideshow photo
+
