@@ -29,32 +29,33 @@
   float: left
   border: 1px solid $border
   border-radius: 2px
-  padding: 20px
+  padding: 1.25em
   position: relative
   -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175)
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175)
 
-.timeline > li > .timeline-panel:before 
-  position: absolute
-  top: 26px
-  right: -20px
-  display: inline-block
-  border-top: 15px solid transparent
-  border-left: 15px solid #ccc
-  border-right: 0 solid #ccc
-  border-bottom: 15px solid transparent
-  content: " "
-
-.timeline > li > .timeline-panel:after 
-  position: absolute
-  top: 27px
-  right: -14px
-  display: inline-block
-  border-top: 14px solid transparent
-  border-left: 14px solid #fff
-  border-right: 0 solid #fff
-  border-bottom: 14px solid transparent
-  content: " "
+//// the < before box
+// .timeline > li > .timeline-panel
+//   &:before 
+//     position: absolute
+//     top: 26px
+//     right: -20px
+//     display: inline-block
+//     border-top: 15px solid transparent
+//     border-left: 15px solid $border
+//     border-right: 0 solid $border
+//     border-bottom: 15px solid transparent
+//     content: " "
+//   &:after
+//     position: absolute
+//     top: 27px
+//     right: -14px
+//     display: inline-block
+//     border-top: 14px solid transparent
+//     border-left: 14px solid #fff
+//     border-right: 0 solid #fff
+//     border-bottom: 14px solid transparent
+//     content: " "
 
 .timeline > li > .timeline-badge
   .end, .begin
@@ -88,8 +89,11 @@
   right: auto
 
 .timeline-title 
-  margin-top: 0
   color: inherit
+  h5
+    margin-bottom: 5px
+  h5, h6
+    margin-top: 0
 
 .timeline-body > p,
 .timeline-body > ul 
@@ -97,3 +101,4 @@
 
 .timeline-body > p + p 
   margin-top: 5px
+

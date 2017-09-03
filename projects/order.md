@@ -43,7 +43,7 @@ As mentioned in introduction, Node.js(Javascript runtime environment) integrated
 | nodemon       | Server change monitor            |
 
 #### UX/UI
-Simplify interface with the ability to add item to cart without refreshing the page(re-rendering the whole page based on event trigger fire from Backbone.js).
+Simplify interface with the ability to add item to cart without refreshing the page(re-rendering the whole page based on event trigger, fired from Backbone.js).
 
 !add to cart photo
 
@@ -53,7 +53,15 @@ Checkout and cart details summary.
 
 !cart view url highlight photo
 
-Attached other events to the view, such as empty cart, edit amount, or item details slideshow.
+Attached other events to the view then manipulating model or controller.
+
+###### Events
+
+{: .checked}
+- empty cart
+- edit item quantity in checkout page
+- shows item detail when clicked on image
+- item details slideshow.
 
 !empty cart photo  
 !slideshow photo

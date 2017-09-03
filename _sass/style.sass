@@ -13,6 +13,9 @@ $blue: #5bc0de
 @import "partial/project_show"
 @import "partial/resume"
 
+a:hover
+  text-decoration: none
+
 //fade
 .fade-in
   opacity: 1
@@ -30,9 +33,12 @@ $blue: #5bc0de
   background-color: $grey
   color: white
 
-body
+body, h1, h2, h3, h4, h5, h6
   font-family: "Mate", sans-serif
   color: $text
+
+  h1, h2, h3, h4, h5, h6
+    letter-spacing: .5px
 
   p
     font-size: 16px
