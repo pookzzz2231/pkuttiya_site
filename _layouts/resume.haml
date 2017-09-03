@@ -1,0 +1,14 @@
+!!! 5
+%html
+  {% haml head.haml %}
+  %body
+    %header
+      {% haml header.haml %}
+    .container.fade-in
+      %script(src="/assets/js/add_fade.js")
+      #resume-page
+        {% haml page/resume/header.haml %}
+        {{ content }}
+    %footer
+      {% include footer.haml %}
+    %script(src="/assets/js/remove_fade.js")

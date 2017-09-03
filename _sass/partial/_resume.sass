@@ -34,7 +34,6 @@
   -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175)
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175)
 
-
 .timeline > li > .timeline-panel:before 
   position: absolute
   top: 26px
@@ -57,22 +56,24 @@
   border-bottom: 14px solid transparent
   content: " "
 
-.timeline > li > .timeline-badge 
-  color: $grey
-  width: 2em
-  height: auto
-  line-height: 1.15em
-  text-align: center
-  position: absolute
-  top: 0
-  margin-left: -0.25em
-  background-color: #fff
-  z-index: 100
-  
+.timeline > li > .timeline-badge
+  .end, .begin
+    color: $grey
+    width: 2em
+    height: auto
+    line-height: 1.15em
+    text-align: center
+    position: absolute
+    margin-left: -0.25em
+    background-color: #fff
+    z-index: 100
+  .end
+    top: 0
+  .begin
+    bottom: 0
 
 .timeline > li.timeline-inverted > .timeline-panel 
   float: right
-
 
 .timeline > li.timeline-inverted > .timeline-panel:before 
   border-left-width: 0
@@ -90,11 +91,9 @@
   margin-top: 0
   color: inherit
 
-
 .timeline-body > p,
 .timeline-body > ul 
   margin-bottom: 0
-
 
 .timeline-body > p + p 
   margin-top: 5px
