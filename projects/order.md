@@ -3,8 +3,13 @@ title:  "order"
 excerpt: "Single page online sushi order app"
 description: "With the popularity or online applications and services.  Restaurants would be more compatible having its own clean and simple interface online ordering routine for customers.  Order is a user-friendly interface, production-ready application, built on single page application technology, which is extremely fast and easy for user to navigate."
 tags: ["Frontend", "Node.js", "Express.js", "Backbone.js", "Handlebar.js", "Pug"]
-link: "https://test.com"
+link: "https://p-kuttiya-sushi.herokuapp.com"
 others: "myflix"
+image:
+  add_to_cart: "../assets/img/order/add_to_cart.png"
+  cart_view: "../assets/img/order/cart_view.png"
+  empty_cart: "../assets/img/order/empty_cart.png"
+  slide_show: "../assets/img/order/slide_show.png"      
 ---
 
 #### Introduction
@@ -45,13 +50,14 @@ As mentioned in introduction, Node.js(Javascript runtime environment) integrated
 #### UX/UI
 Simplify interface with the ability to add item to cart without refreshing the page(re-rendering the whole page based on event trigger, fired from Backbone.js).
 
-!add to cart photo
+{% include project/image.html url=page.image.add_to_cart %}
 
 Checkout and cart details summary.
 
 > Backbone.js is implemented with `Backbone router` which triggers the window to navigate at destinated url without reloading page.
 
-!cart view url highlight photo
+{% include project/image.html url=page.image.cart_view %}
+
 
 Attached other events to the view then manipulating model or controller.
 
@@ -63,6 +69,8 @@ Attached other events to the view then manipulating model or controller.
 - shows item detail when clicked on image
 - item details slideshow.
 
-!empty cart photo  
-!slideshow photo
+Empty cart will trigger Backbone to reset all collection.
+{% include project/image.html url=page.image.empty_cart %}
 
+Slide show triggers the slideshow Jquery algorithm attached to Backbone event.
+{% include project/image.html url=page.image.slide_show %}

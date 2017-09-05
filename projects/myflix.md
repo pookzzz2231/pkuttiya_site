@@ -4,16 +4,20 @@ excerpt: "A video subscription services."
 description: "With the growing of modern broadcasting technology. Users tend to have more choices to access into video meterials. MyFlix is an application that solely permitting the admin team to have full control of their meterials, while subscriber need to make monthly payment to access the content. Suitable for entertainment industry and online classes."
 tags: ["Frontend", "Backend", "Ruby on Rails", "CircleCI"]
 link: "https://test.com"
-others: "myflix"
+others: "myyelp"
+img: 
+  mobile: "mibole"
 ---
+
+{{page.img.mobile}}
 
 #### Introduction
 One of a production quality that I built a way back for my graduation project in Coding bootcamp, after a couple update and implementation, the project itself illustrates many of potentials and requirement of essential tasks that could demonstrate the efficiency of Ruby on Rails.  
 
 #### Planning phase  
-The project was developed with Postgresql. The database was decided to be as shown below.  
+<!--The project was developed with Postgresql. The database was decided to be as shown below.  
 
-![design image](/assets/img/{{page.title | downcase}}/banner.png )
+!design image-->
 
 ###### App features 
 
