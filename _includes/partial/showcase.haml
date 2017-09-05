@@ -2,34 +2,34 @@
   %p {{page.showcase[0].cover}}
   .showcase-img
     %a.wide{href: "/projects/{{page.showcase[0]}}"}
-      .img{style: "background-image: url(/assets/img/{{page.showcase[0]}}/banner.png);"}
+      .img{style: "background-image: url({{site.img_path}}/projects/{{page.showcase[0]}}/banner.png);"}
       .cover-logo
-        %img(src="/assets/img/{{page.showcase[0]}}/logo.png")
+        %img(src="{{site.img_path}}/projects/{{page.showcase[0]}}/logo.png")
       .overlay
         .text
-          .image-title Myflix
+          .image-title {{page.showcase[0] | upcase}}
           %p A video subscription services
     %a.square{href: "/projects/{{page.showcase[1]}}"}
-      .img{style: "background-image: url(/assets/img/{{page.showcase[1]}}/banner.png);"}
+      .img{style: "background-image: url({{site.img_path}}/projects/{{page.showcase[1]}}/banner.png);"}
       .cover-logo
-        %img#photogram(src="/assets/img/{{page.showcase[1]}}/logo.png")
+        %img(src="{{site.img_path}}/projects/{{page.showcase[1]}}/logo.png")
       .overlay
         .text
-          .image-title Photogram
+          .image-title {{page.showcase[1] | upcase}}
           %p Photos sharing social media
     %a.square{href: "/projects/{{page.showcase[2]}}"}
-      .img{style: "background-image: url(/assets/img/{{page.showcase[2]}}/banner.png);"}
+      .img{style: "background-image: url({{site.img_path}}/projects/{{page.showcase[2]}}/banner.png);"}
       .cover-logo
-        %img(src="/assets/img/{{page.showcase[2]}}/logo.png")
+        %img(src="{{site.img_path}}/projects/{{page.showcase[2]}}/logo.png")
       .overlay
         .text
-          .image-title Order
+          .image-title {{page.showcase[2] | upcase}}
           %p Single page online sushi order app
     %a.wide{href: "/projects/{{page.showcase[3]}}"}
-      .img{style: "background-image: url(/assets/img/{{page.showcase[3]}}/banner.png);"}
+      .img{style: "background-image: url({{site.img_path}}/projects/{{page.showcase[3]}}/banner.png);"}
       .cover-logo
-        %img(src="/assets/img/{{page.showcase[3]}}/logo.png")
+        %img(src="{{site.img_path}}/projects/{{page.showcase[3]}}/logo.png")
       .overlay
         .text
-          .image-title Myyelp
+          .image-title {{page.showcase[3] | upcase}}
           %p A business review website
