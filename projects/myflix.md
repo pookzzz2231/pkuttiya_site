@@ -9,8 +9,6 @@ img:
   mobile: "mibole"
 ---
 
-{{page.img.mobile}}
-
 #### Introduction
 One of a production quality that I built a way back for my graduation project in Coding bootcamp, after a couple update and implementation, the project itself illustrates many of potentials and requirement of essential tasks that could demonstrate the efficiency of Ruby on Rails.  
 
