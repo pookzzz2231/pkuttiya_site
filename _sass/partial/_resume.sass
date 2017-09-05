@@ -1,11 +1,26 @@
 #resume-page
   width: 70%
-  margin: 0 auto
+  margin: 1em auto 5em auto
+  
+  .page-header
+    margin-top: 0
+    margin-bottom: 1em
+
+    .pull-left, .pull-right
+      a
+        color: $grey
+        margin-right: .5em
+      
+    .pull-left
+      a:hover
+        color: $text
 
   .about
     padding-bottom: 1em
     margin-bottom: 1.5em
     border-bottom: 1px solid $border
+    h5
+      margin-top: 0 
     #code
       clear: both
       width: 10%
@@ -119,3 +134,12 @@
 .timeline-body > p + p 
   margin-top: 5px
 
+@media screen and (max-width: 415px)
+  #resume-page
+    width: 100%
+    .timeline >li > .timeline-badge .end, 
+    .timeline >li > .timeline-badge .begin
+      margin-left: -.75em
+
+    p
+      padding-left: 0 !important

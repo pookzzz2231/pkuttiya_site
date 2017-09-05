@@ -95,14 +95,18 @@ section.showcase
       height: 200px !important
       margin: 5px 0
 
-    .overlay
-      display: none
+    .showcase-img 
+      .wide, .square 
+        &:hover .overlay 
+          opacity: 0 !important
 
 @media screen and (max-width: 415px)
   .showcase
-    width: 90% !important
+    width: 100% !important
     .img
       height: 130px !important  
       width: auto    
-    .overlay
-      display: none
+    .showcase-img 
+      .wide, .square 
+        &:hover .overlay 
+          opacity: 0 !important
