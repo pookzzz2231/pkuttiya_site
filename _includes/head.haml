@@ -8,5 +8,12 @@
     {% else %}
     {{ site.title | escape }}
     {% endif %}
-  %link{rel: "stylesheet", href: "/assets/main.css" }
-  %script{src:"/assets/js/jquery.min.js"}
+  
+  %link{href: "{{site.url}}/assets/img/favicons/apple-touch-icon.png", rel: "apple-touch-icon", sizes: "76x76"}
+  %link{href: "{{site.url}}/assets/img/favicons/favicon-32x32.png", rel: "icon", sizes: "32x32", type: "image/png"}
+  %link{href: "{{site.url}}/assets/img/favicons/favicon-16x16.png", rel: "icon", sizes: "16x16", type: "image/png"}
+  %link{href: "{{site.url}}/assets/img/favicons/manifest.json", rel: "manifest"}
+  %meta{content: "#000000", name: "theme-color"}
+
+  %link{rel: "stylesheet", href: "{{site.url}}/assets/main.css" }
+  %script{src:"{{site.url}}/assets/js/jquery.min.js"}
