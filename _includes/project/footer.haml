@@ -9,7 +9,7 @@
 %section.showcase
   .showcase-img
     {% for other in page.others %}
-    %a.square{href: "#"}
+    %a.square{href: "/projects/{{other | downcase}}"}
       .img{style: "background-image: url({{site.img_path}}/projects/{{other}}/banner.png);"}
       .cover-logo
         %img(src="{{site.img_path}}/projects/{{other}}/logo.png")
