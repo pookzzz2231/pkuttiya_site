@@ -5,8 +5,6 @@ description: "With the growing of modern broadcasting technology. Users tend to 
 tags: ["Frontend", "Backend", "Ruby on Rails", "CircleCI"]
 link: "https://test.com"
 others: "myyelp"
-img: 
-  mobile: "mibole"
 ---
 
 #### Introduction
