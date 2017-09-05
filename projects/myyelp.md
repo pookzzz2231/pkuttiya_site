@@ -4,7 +4,7 @@ excerpt: "A business review website."
 description: "An application that focuses on local business review and networking site."
 tags: ["Frontend", "Backend", "Ruby on Rails"]
 link: "https://p-kuttiya-myyelp.herokuapp.com"
-others: "myflix"
+others: ["myflix", "order", "photogram"]
 image:
   business_index: "business_index.png"
   business_new: "business_new.png"

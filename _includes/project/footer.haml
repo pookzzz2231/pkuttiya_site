@@ -3,30 +3,22 @@
 %p 
   A SHOWCASE OF PROJECTS, <br>
   DESIGN AND DEVELOPMENT.
-    
+
+
+
 %section.showcase
   .showcase-img
+    {% for other in page.others %}
     %a.square{href: "#"}
-      .img{style: "background-image: url(/assets/img/{{page.others}}/banner.png);"}
+      .img{style: "background-image: url({{site.img_path}}/projects/{{other}}/banner.png);"}
       .cover-logo
-        %img(src="/assets/img/{{page.others}}/logo.png")
+        %img(src="{{site.img_path}}/projects/{{other}}/logo.png")
       .overlay
         .text
-          .image-title myflix
-          %p A video subscription services
-    %a.square{href: "#"}
-      .img{style: "background-image: url(/assets/img/{{page.others}}/banner.png);"}
-      .cover-logo
-        %img(src="/assets/img/{{page.others}}/logo.png")
-      .overlay
-        .text
-          .image-title myflix
-          %p A video subscription services
-    %a.square{href: "#"}
-      .img{style: "background-image: url(/assets/img/{{page.others}}/banner.png);"}
-      .cover-logo
-        %img(src="/assets/img/{{page.others}}/logo.png")
-      .overlay
-        .text
-          .image-title myflix
-          %p A video subscription services
+          .image-title {{other | upcase}}
+          {% for page in site.pages %}
+          {% if page.title == other %}
+          %p {{page.excerpt}}
+          {% endif %}
+          {% endfor %}
+    {% endfor %}

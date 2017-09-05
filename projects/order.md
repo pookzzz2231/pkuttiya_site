@@ -4,12 +4,12 @@ excerpt: "Single page online sushi order app"
 description: "With the popularity or online applications and services.  Restaurants would be more compatible having its own clean and simple interface online ordering routine for customers.  Order is a user-friendly interface, production-ready application, built on single page application technology, which is extremely fast and easy for user to navigate."
 tags: ["Frontend", "Node.js", "Express.js", "Backbone.js", "Handlebar.js", "Pug"]
 link: "https://p-kuttiya-sushi.herokuapp.com"
-others: "myflix"
+others: ["myflix", "myyelp", "photogram"]
 image:
-  add_to_cart: "../assets/img/order/add_to_cart.png"
-  cart_view: "../assets/img/order/cart_view.png"
-  empty_cart: "../assets/img/order/empty_cart.png"
-  slide_show: "../assets/img/order/slide_show.png"      
+  add_to_cart: "add_to_cart.png"
+  cart_view: "cart_view.png"
+  empty_cart: "empty_cart.png"
+  slide_show: "slide_show.png"      
 ---
 
 #### Introduction

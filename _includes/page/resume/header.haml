@@ -1,12 +1,12 @@
 .page-header.clearfix
   .pull-left
-    %a{href: "#", data: {toggle: "tooltip"}, title: "Download pdf"} 
+    %a{href: "{{site.resume}}", data: {toggle: "tooltip"}, title: "Download pdf", download: "pkuttiya_resume.pdf"} 
       %i.fa.fa-file-pdf-o
-    %a{href: "#", data: {toggle: "tooltip"}, title: "Mail_to"} 
+    %a{href: "mailto:{{site.email}}", data: {toggle: "tooltip"}, title: "Mail to"} 
       %i.fa.fa-envelope-o
-    %a{href: "#", data: {toggle: "tooltip"}, title: "Linkedin"} 
+    %a{href: "{{site.linkedin}}", target: "_blank", data: {toggle: "tooltip"}, title: "Linkedin"} 
       %i.fa.fa-linkedin
-    %a{href: "#", data: {toggle: "tooltip"}, title: "Github"} 
+    %a{href: "{{site.github}}", target: "_blank", data: {toggle: "tooltip"}, title: "Github"} 
       %i.fa.fa-github
   .pull-right
-    %a{} {{site.email}}
+    %a {{site.email}}

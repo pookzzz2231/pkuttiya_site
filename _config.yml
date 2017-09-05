@@ -14,8 +14,9 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: ""
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 img_path: "https://s3.us-east-2.amazonaws.com/pkuttiya-site/img"
-linkedin: 
-github: https://github.com/pookzzz2231
+linkedin: "https://www.linkedin.com/in/paul-kuttiya-1105692a/"
+github: "https://github.com/pookzzz2231"
+resume_pdf: "https://s3.us-east-2.amazonaws.com/pkuttiya-site/resume.pdf"
 
 # Build settings
 livereload: true

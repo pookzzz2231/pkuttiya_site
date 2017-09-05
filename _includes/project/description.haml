@@ -4,7 +4,7 @@
     {% haml project/tags.haml %}
   .col-md-4.col-sm-12.no-padding.clearfix
     %a.text-center{href: "{{page.link}}", target: "_blank"}
-      %img.logo{src: "/assets/img/{{page.title | downcase}}/logo.png"}
+      %img.logo{src: "{{site.img_path}}/projects/{{page.title | downcase}}/logo.png"}
       .link
         %p view live version
         {% haml svg_arrow.haml %}

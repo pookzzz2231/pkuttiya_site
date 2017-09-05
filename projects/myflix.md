@@ -2,9 +2,9 @@
 title:  "myflix"
 excerpt: "A video subscription services."
 description: "With the growing of modern broadcasting technology. Users tend to have more choices to access into video meterials. MyFlix is an application that solely permitting the admin team to have full control of their meterials, while subscriber need to make monthly payment to access the content. Suitable for entertainment industry and online classes."
-tags: ["Frontend", "Backend", "Ruby on Rails", "CircleCI"]
-link: "https://test.com"
-others: "myyelp"
+tags: ["Frontend", "Backend", "Ruby on Rails"]
+link: "https://p-kuttiya-myflix.herokuapp.com"
+others: ["myyelp", "order", "photogram"]
 ---
 
 #### Introduction
