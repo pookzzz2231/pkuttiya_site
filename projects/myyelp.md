@@ -6,16 +6,16 @@ tags: ["Frontend", "Backend", "Ruby on Rails"]
 link: "https://p-kuttiya-myyelp.herokuapp.com"
 others: "myflix"
 image:
-  business_index: "/assets/img/myyelp/business_index.png"
-  business_new: "/assets/img/myyelp/business_new.png"
-  business_show: "/assets/img/myyelp/business_show.png"
-  logout: "/assets/img/myyelp/logout.png"
-  review_edit: "/assets/img/myyelp/review_edit.png"
-  review_index: "/assets/img/myyelp/review_index.png"
-  review_new: "/assets/img/myyelp/review_new.png"
-  user_login: "/assets/img/myyelp/user_login.png"
-  user_show: "/assets/img/myyelp/user_show.png"
-  user_signup: "/assets/img/myyelp/user_signup.png"
+  business_index: "../assets/img/myyelp/business_index.png"
+  business_new: "../assets/img/myyelp/business_new.png"
+  business_show: "../assets/img/myyelp/business_show.png"
+  logout: "../assets/img/myyelp/logout.png"
+  review_edit: "../assets/img/myyelp/review_edit.png"
+  review_index: "../assets/img/myyelp/review_index.png"
+  review_new: "../assets/img/myyelp/review_new.png"
+  user_login: "../assets/img/myyelp/user_login.png"
+  user_show: "../assets/img/myyelp/user_show.png"
+  user_signup: "../assets/img/myyelp/user_signup.png"
 ---
 
 #### Introduction
