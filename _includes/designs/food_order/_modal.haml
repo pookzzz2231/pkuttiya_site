@@ -1,0 +1,40 @@
+/ Modal
+#cart.modal
+  .modal-content
+    .modal-header
+      %span.close ×
+      %h2 Your Cart
+    .modal-body
+      %ul.cart-lists
+        %li
+          .list-container
+            %span Pizza
+            .edit
+              %span.quality 3
+              %a.minus(href="#")
+                %img(src="/assets/images/food_order/svg/minus.svg")
+              %a.plus(href="#")
+                %img(src="/assets/images/food_order/svg/plus.svg")
+              %span.item-price $9.82
+              %a.delete(href="#")
+                %img(src="/assets/images/food_order/svg/bin.svg")
+        %li
+          .list-container
+            %span Pizza Chicked BBQ
+            .edit
+              %span.quality 3
+              %a.minus(href="#")
+                %img(src="/assets/images/food_order/svg/minus.svg")
+              %a.plus(href="#")
+                %img(src="/assets/images/food_order/svg/plus.svg")
+              %span.item-price $9.82
+              %a.delete(href="#")
+                %img(src="/assets/images/food_order/svg/bin.svg")                
+    .modal-footer
+      .total
+        %h2
+          %span Total:
+          %span $24.24
+      %button.checkout
+        %h1
+          %a(href="/projects/food_order/checkout") checkout

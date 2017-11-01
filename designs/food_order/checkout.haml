@@ -1,0 +1,46 @@
+---
+layout: designs/food_order
+---
+
+{% haml designs/food_order/_nav.haml %}
+
+.order-container
+  %form
+    %h2 Information
+    %fieldset
+      .input-group
+        %input(type="text")
+        %input(type="text")
+      .input-group
+        %input(type="text")
+        %input(type="text")
+      .input-group
+        %input(type="text")
+        %input(type="text")
+          
+  #order-summary
+    .header
+      %h2 Order
+    .body
+      %ul.cart-lists
+        %li
+          .list-container
+            %span Pizza
+            .edit
+              %span.quality 3
+              %a.minus(href="#")
+                %img(src="/assets/images/food_order/svg/minus.svg")
+              %a.plus(href="#")
+                %img(src="/assets/images/food_order/svg/plus.svg")
+              %span.item-price $9.82
+              %a.delete(href="#")
+                %img(src="/assets/images/food_order/svg/bin.svg")
+      .modal-footer
+        .total
+          %h2
+            %span Total:
+            %span $24.24  
+
+
+{% haml designs/food_order/_modal.haml %}
+{% haml designs/food_order/_script.haml %}
