@@ -3,7 +3,8 @@ input
     outline-color: orange
 
 .order-container
-  margin-top: 2em
+  padding: 0 0 2rem 0
+  margin-bottom: 1rem
   display: flex
   justify-content: space-between
 
@@ -12,23 +13,46 @@ input
     background-color: white
     margin-right: 1rem
     h2
-      margin-left: 1rem
+      font-weight: normal
+      margin: 1rem
+      padding: 0 0 .5rem 0
+      border-bottom: 3px solid $black
     fieldset
       padding: 0
+      margin: 0
       display: flex
       border: none
-      .input-group
+      .input-wrapper
         display: flex
         justify-content: space-between
-        input
-          flex: 1
-          margin: 1rem
-          border-color: #e0e0e0
+        margin-bottom: 1rem
+        .radio-group, .input-group
           font-weight: 300
-          padding: 1rem
-          border: 2px solid #e0e0e0
-          box-shadow: inset 1px 1px 2px 0 rgba(40,43,46,0.06)
-          border-radius: 0
+          margin: .5rem 1rem
+        .input-group
+          display: flex
+          flex-direction: column
+          flex: 1
+          label
+            font-weight: bolder
+          input[type="text"]
+            margin-top: .25rem
+            padding: 1rem
+            border: 2px solid #e0e0e0
+            box-shadow: inset 1px 1px 2px 0 rgba(40,43,46,0.06)
+            border-radius: 0
+      button
+        border: none
+        background-color: orange
+        color: white
+        font-size: 1.5rem
+        font-weight: 500
+        margin: 0 auto
+        width: 100%
+        padding: 1rem
+        cursor: pointer
+        &:hover
+          background-color: $black
 
 #order-summary, form
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)
@@ -39,6 +63,7 @@ input
   flex-direction: column
   background-color: #fefefe
   flex: 2
+  height: 100%
 
   .header
     padding: 0 1rem
@@ -93,3 +118,19 @@ input
       a
         color: white
         text-transform: uppercase
+
+@media screen and (max-width: 417px)
+  .order-container
+    flex-direction: column
+    padding: .5em
+    margin: 0
+    #order-summary
+      order: 1
+      margin-bottom: 1rem
+    form
+      order: 2
+      margin: 0
+      fieldset
+        .input-wrapper, .input-group
+          display: flex
+          flex-direction: column

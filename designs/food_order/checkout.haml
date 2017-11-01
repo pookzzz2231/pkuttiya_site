@@ -8,16 +8,42 @@ layout: designs/food_order
   %form
     %h2 Information
     %fieldset
-      .input-group
-        %input(type="text")
-        %input(type="text")
-      .input-group
-        %input(type="text")
-        %input(type="text")
-      .input-group
-        %input(type="text")
-        %input(type="text")
+      .input-wrapper
+        .input-group
+          %label{for: "first"} Firstname
+          %input{type: "text", id: "first", name: "first"}
+        .input-group
+          %label{for: "last"} Lastname
+          %input{type: "text", id: "last", name: "last"}
+      .input-wrapper
+        .input-group
+          %label{for: "address"} Address
+          %input{type: "text", id: "address", name: "address"}
+        .input-group
+          %label{for: "city"} City
+          %input{type: "text", id: "city", name: "city"}
+      .input-wrapper
+        .input-group
+          %label{for: "phone"} Phone
+          %input{type: "text", id: "phone", name: "phone"}
+        .input-group
+          %label{for: "email"} Email
+          %input{type: "text", id: "email", name: "email"}
+      %h2 Payment
+      .input-wrapper
+        .radio-group
+          %input{type: "radio", name: "payment", id: "cash", value: "cash", checked: "checked"}
+          %label{for: "cash"} Cash          
+        .radio-group
+          %input{type: "radio", name: "payment", id: "card", value: "card"}
+          %label{for: "card"} Credit Card          
+        .radio-group            
+          %input{type: "radio", name: "payment", id: "paypal", value: "palpal"}
+          %label{for: "paypal"} Paypal
+      %button(type="submit") Order now!
+            
           
+
   #order-summary
     .header
       %h2 Order
@@ -40,7 +66,3 @@ layout: designs/food_order
           %h2
             %span Total:
             %span $24.24  
-
-
-{% haml designs/food_order/_modal.haml %}
-{% haml designs/food_order/_script.haml %}
