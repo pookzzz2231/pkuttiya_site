@@ -1,0 +1,95 @@
+input
+  &:focus
+    outline-color: orange
+
+.order-container
+  margin-top: 2em
+  display: flex
+  justify-content: space-between
+
+  form
+    flex: 3
+    background-color: white
+    margin-right: 1rem
+    h2
+      margin-left: 1rem
+    fieldset
+      padding: 0
+      display: flex
+      border: none
+      .input-group
+        display: flex
+        justify-content: space-between
+        input
+          flex: 1
+          margin: 1rem
+          border-color: #e0e0e0
+          font-weight: 300
+          padding: 1rem
+          border: 2px solid #e0e0e0
+          box-shadow: inset 1px 1px 2px 0 rgba(40,43,46,0.06)
+          border-radius: 0
+
+#order-summary, form
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)
+
+#order-summary
+  display: -webkit-flex
+  display: flex
+  flex-direction: column
+  background-color: #fefefe
+  flex: 2
+
+  .header
+    padding: 0 1rem
+    background-color: black
+    color: white
+  .body
+    .cart-lists
+      overflow-y: auto
+      height: 50vh
+      li
+        padding: 1rem 0 1rem 1rem
+        border-bottom: 1px solid $light-grey
+        .list-container
+          display: flex
+          .quality, .item-price
+            margin-left: auto
+          .item-price
+            padding-left: 1em
+          .edit
+            margin-left: auto
+            padding-right: 1.5rem
+            a
+              display: inline-block
+              font-weight: bolder
+              img
+                vertical-align: middle
+            a.plus, a.minus
+              img
+                width: 1em
+                height: 1em
+            a.delete
+              img
+                height: 2em
+
+  .modal-footer
+    display: flex
+    flex-direction: column
+    .total
+      border-top: 1px solid $black
+      width: 100%
+      text-align: right
+      h2
+        font-weight: normal
+        padding: 0 2rem
+
+    .checkout
+      border: none
+      text-align: center
+      color: white
+      background-color: $button
+      cursor: pointer
+      a
+        color: white
+        text-transform: uppercase

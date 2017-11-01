@@ -1,0 +1,109 @@
+/* Add Animation */
+@-webkit-keyframes animate-left
+	from
+		right: -300px
+		opacity: 0
+	to
+		right: 0 
+		opacity: 1
+
+@keyframes animate-left
+	from
+		right: -300px 
+		opacity: 0
+	to
+		right: 0 
+		opacity: 1
+
+.modal
+	display: none
+	position: fixed
+	z-index: 1
+	left: 0
+	top: 0
+	width: 100% 
+	height: 100% 
+	overflow: auto 
+	background-color: rgb(0,0,0) 
+	background-color: rgba(0,0,0,0.4)
+	.modal-content
+		display: -webkit-flex
+		display: flex
+		flex-direction: column
+		right: 0
+		overflow: none
+		max-height: 90vh
+		position: absolute
+		background-color: #fefefe
+		margin: auto
+		width: 35%
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)
+		-webkit-animation-name: animate-left
+		-webkit-animation-duration: 0.4s
+		animation-name: animate-left
+		animation-duration: 0.4s
+
+		.modal-header
+			padding: 0 1rem
+			background-color: $light-grey
+			color: $black
+			.close
+				color: $black
+				position: absolute
+				right: 1.5rem
+				top: 0
+				font-size: 28px
+				font-weight: bold
+				&:hover, &:focus 
+					text-decoration: none
+					cursor: pointer
+
+		.modal-body
+			.cart-lists
+				overflow-y: auto
+				height: 50vh
+				li
+					padding: 1rem 0 1rem 1rem
+					border-bottom: 1px solid $light-grey
+					.list-container
+						display: flex
+						.quality, .item-price
+							margin-left: auto
+						.item-price
+							padding-left: 1em
+						.edit
+							margin-left: auto
+							padding-right: 1.5rem
+							a
+								display: inline-block
+								font-weight: bolder
+								img
+									vertical-align: middle
+							a.plus, a.minus
+								img
+									width: 1em
+									height: 1em
+							a.delete
+								img
+									height: 2em
+
+		.modal-footer
+			display: flex
+			flex-direction: column
+			.total
+				border-top: 1px solid $black
+				width: 100%
+				text-align: right
+				h2
+					font-weight: normal
+					padding: 0 2rem
+
+			.checkout
+				border: none
+				text-align: center
+				color: white
+				background-color: $button
+				cursor: pointer
+				a
+					color: white
+					text-transform: uppercase

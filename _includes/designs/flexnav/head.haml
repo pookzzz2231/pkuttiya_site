@@ -1,0 +1,19 @@
+%head
+  %meta{charset: "utf-8"}
+  %meta{content: "IE=edge", "http-equiv" => "X-UA-Compatible"}
+  %meta{content: "width=device-width, initial-scale=1", name: "viewport"}
+  %title
+    {% if page.title %}
+    {{ page.title | escape }}
+    {% else %}
+    {{ site.title | escape }}
+    {% endif %}
+  
+  -# %link{href: "/assets/favicons/apple-touch-icon.png", rel: "apple-touch-icon", sizes: "76x76"}
+  -# %link{href: "/assets/favicons/favicon-32x32.png", rel: "icon", sizes: "32x32", type: "image/png"}
+  -# %link{href: "/assets/favicons/favicon-16x16.png", rel: "icon", sizes: "16x16", type: "image/png"}
+  -# %link{href: "/assets/favicons/manifest.json", rel: "manifest"}
+  -# %meta{content: "#000000", name: "theme-color"}
+  
+  -# %link{rel: "stylesheet", href: "/lib/font-awesome/css/font-awesome.min.css" }
+  %link{rel: "stylesheet", href: "/assets/css/designs/flexnav/main.css" }
