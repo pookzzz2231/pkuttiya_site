@@ -6,7 +6,9 @@ layout: designs/food_order
 
 .order-container
   %form
-    %h2 Information
+    %h2 
+      %i.fa.fa-user
+      %span Information
     %fieldset
       .input-wrapper
         .input-group
@@ -29,7 +31,9 @@ layout: designs/food_order
         .input-group
           %label{for: "email"} Email
           %input{type: "text", id: "email", name: "email"}
-      %h2 Payment
+      %h2
+        %i.fa.fa-money
+        %span Payment
       .input-wrapper
         .radio-group
           %input{type: "radio", name: "payment", id: "cash", value: "cash", checked: "checked"}
@@ -41,7 +45,6 @@ layout: designs/food_order
           %input{type: "radio", name: "payment", id: "paypal", value: "palpal"}
           %label{for: "paypal"} Paypal
       %button(type="submit") Order now!
-            
           
 
   #order-summary
@@ -55,12 +58,12 @@ layout: designs/food_order
             .edit
               %span.quality 3
               %a.minus(href="#")
-                %img(src="/assets/images/food_order/svg/minus.svg")
+                %i.fa.fa-minus-circle
               %a.plus(href="#")
-                %img(src="/assets/images/food_order/svg/plus.svg")
+                %i.fa.fa-plus-circle
               %span.item-price $9.82
               %a.delete(href="#")
-                %img(src="/assets/images/food_order/svg/bin.svg")
+                %i.fa.fa-trash-o
       .modal-footer
         .total
           %h2

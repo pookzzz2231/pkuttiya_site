@@ -6,6 +6,14 @@ $black: #444
 $light-grey: #eee
 $grey: #a4a7a9
 $button: #25282a
+$green: #4aa36b
+$red: #b00b00
+
+$fa-font-path: "../../../fonts/font-awesome"
+@import "font-awesome/font-awesome"
+
+.fa-trash-o
+	color: $red
 
 @import 'designs/food_order/modal'
 @import 'designs/food_order/checkout'
@@ -52,16 +60,16 @@ nav
 				padding: 2px
 				width: 15px
 				height: 15px
-				background-color: $button
+				background-color: $green
 				border-radius: 50%
 				top: -5px
 				right: 20%
-			img
+			.fa-shopping-basket
+				font-size: 1.5em
+				color: $black
 				margin-top: 5px
-				width: 1.75em
-				height: 1.75em
 				border-right: 1px solid #eee
-				padding-right: 1em
+				padding-right: .75em
 			+ span
 				padding-left: .5em
 				font-size: 1.5em
@@ -78,6 +86,14 @@ nav
 		margin-bottom: 0
 		font-weight: normal
 
+.display-style
+	display: flex
+	justify-content: flex-end
+	margin-top: 2em
+	i
+		margin-left: 1em
+		font-size: 1.5em
+			
 #menu-items
 	margin: 2em 0
 	button
@@ -164,6 +180,9 @@ nav
 				img, span
 					font-size: 1em
 		
+		.display-style
+			padding-right: 1em
+
 		#menu-items
 			.item
 				button
@@ -193,3 +212,8 @@ nav
 					width: 100px
 				button
 					margin-left: auto
+
+@media screen and (max-width: 325px)
+	#menu-items
+		.info
+			width: 60%

@@ -1,6 +1,6 @@
 _site
 .sass-cache
 .jekyll-metadata
-/assets/img
+/assets/images/**/*.jpg
 .git
 .Gemfile.lock
