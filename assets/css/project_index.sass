@@ -29,11 +29,16 @@
           filter: brightness(98%)
           transition: all .2s ease-in-out
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
-          width: 250px
-          height: 200px
-        h4
+          width: 100%
+          height: auto
+        .details
           margin-top: 2rem
           text-align: center
+          h4
+            margin-bottom: 0
+          span
+            color: $text
+            font-size: .85em  
         &:hover, &:visited, &:focus
           text-decoration: none !important
           h4
@@ -44,4 +49,7 @@
             
 @media screen and (max-width: 770px)
   .project-index .projects .project-item
-    width: 45%
+    width: 85%
+    a
+      img
+        transition: none !important
