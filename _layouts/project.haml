@@ -5,7 +5,6 @@
     %header
       {% haml header.haml %}
     .container.fade-in
-      %script(src="/assets/js/add_fade.js")
       .row.project-show
         %section.project-header
           {% haml project/header.haml %}
@@ -16,5 +15,6 @@
           {% haml project/footer.haml %}
     %footer
       {% include footer.haml %}
+    %script(src="/assets/js/add_fade.js")
     %script(src="/assets/js/remove_fade.js")
     %script(src="/assets/js/tooltip.js")

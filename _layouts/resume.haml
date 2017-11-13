@@ -5,12 +5,12 @@
     %header
       {% haml header.haml %}
     .container.fade-in
-      %script(src="/assets/js/add_fade.js")
       #resume-page
         {% haml page/resume/header.haml %}
         {% haml page/resume/skills.haml %}        
         {{ content }}
     %footer
       {% include footer.haml %}
+    %script(src="/assets/js/add_fade.js")
     %script(src="/assets/js/remove_fade.js")
     %script(src="/assets/js/tooltip.js")
